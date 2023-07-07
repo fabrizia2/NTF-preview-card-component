@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Outfit', sans-serif;
+    font-size:18px;
+*/
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --MainBG: hsl(217, 54%, 11%);
+    --CardBG: hsl(216, 50%, 16%);
+    --Line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--MainBG);
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 327px;
+    height: 543px;
+    background-color: var(--CardBG);
+    margin: 61px auto;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 30px 40px 15px hsl(215, 85%, 8%);
+}
+
+#imagen {
+    background-image: url(../images/image-equilibrium.jpg);
+    width: 280px;
+    height: 280px;
+    margin: 24px auto 0;
+    border-radius: 8px;
+    background-size: cover;
+}
+
+.ojo {
+    padding: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ojo:hover {
+    cursor: pointer;
+    background-image: url(../images/icon-view.svg);
+    background-color: hsla(178, 100%, 50%, 0.418);
+}
+
+#equilibrium-container {
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 0 24px;
+    border-bottom: 1px solid var(--Line);
+}
+
+#equilibrium-container h2 {
+    color: var(--White);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#equilibrium-container h2:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+#equilibrium-container p {
+    color: var(--Softblue);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#eth-days-container {
+    display: flex;
+    width: 100%;
+}
+
+.eth-days {
+    display: flex;
+    flex-grow: 1;
+    font-size: 0.9rem;
+}
+
+#eth-days-container .days {
+    justify-content: flex-end;
+}
+
+#eth-days-container .eth span {
+    color: var(--Cyan);
+}
+#eth-days-container .days span {
+    color: var(--Softblue);
+}
+
+.eth-days span {
+    margin-left: 5px;
+}
+
+#creation-container {
+    width: 100%;
+    padding: 5px 24px;
+}
+
+#creation-container .avatar {
+    width: 100%;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.avatar img {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.avatar h4 {
+    color: var(--Softblue);
+    font-size: 0.9rem;
+    margin-left: 25px;
+}
+
+.avatar span {
+    color: white;
+}
+
+.avatar span:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+/* -------------------- FOOTER ---------------- */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ---------------------- media query (1440PX)------------------ */
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 352px;
+        height: 599px;
+        background-color: var(--CardBG);
+        margin: 149px auto;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imagen {
+        background-image: url(../images/image-equilibrium.jpg);
+        width: 302px;
+        height: 302px;
+        margin: 27px auto 0;
+        border-radius: 8px;
+        background-size: cover;
+    }
+
+    #equilibrium-container {
+        height: 188px;
+    }
+
+    #equilibrium-container h2 {
+        font-size: 1.3rem;
+    }
+}
